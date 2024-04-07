@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="/assets/calculator-solid.svg" type="image/x-icon">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <title>Calculadora IMC</title>
+    <script src="https://kit.fontawesome.com/982b1f0b5c.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="alert-error">
+        Digite somente números
+    </div>
+    <div class="container">
+        <main class="card">
+            <form>
+                <fieldset>
+                    <h1 class="title">Cálculo de IMC</h1>
+                    <div class="input-wrapper">
+                        <label for="weight">Peso (kg)</label>
+                        <input type="text" id="weight" name="weight" placeholder="60">
+                    </div>
+                    <div class="input-wrapper">
+                        <label for="height">Altura (cm)</label>
+                        <input type="text" id="height" name="height" placeholder="165">
+                    </div>
+                    <button>Calcular IMC <i class="fa-solid fa-arrow-right"></i> </button>
+                </fieldset>
+            </main>
+        </div>
+        
+        <div class="modal-wrapper">
+            <div class="modal card">
+                <h2 class="title">
+                    <button class="close"><img src="/assets/close.svg" alt="button to close"></button>
+                    <span>O seu IMC é de</span>
+                </h2>
+            </div>
+        </div>
+    </div>
+    <script src="./JS/main.js" type="module"></script>
+</body>
+</html>
